@@ -1,0 +1,15 @@
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.Core.deps.json
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.Core.runtimeconfig.json
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.Core.runtimeconfig.dev.json
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.Core.dll
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.Core.pdb
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.DataLayer.dll
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\bin\Debug\netcoreapp3.1\Toplearn.DataLayer.pdb
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.csprojAssemblyReference.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.AssemblyInfoInputs.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.AssemblyInfo.cs
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.csproj.CoreCompileInputs.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.csproj.CopyComplete
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.dll
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.pdb
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.Core\obj\Debug\netcoreapp3.1\Toplearn.Core.genruntimeconfig.cache

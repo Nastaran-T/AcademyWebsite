@@ -1,0 +1,115 @@
+﻿@page "{id}"
+@model Academy.Web.Pages.Admin.manageUser.EditUserModel
+@using Academy.DataLayer.Entities.User
+@{
+    ViewData["Title"] = "EditUser";
+    List<Role> roles = ViewData["Roles"] as List<Role>;
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">ویرایش کاربر</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="editUserViewModel.UserId" />
+        <input type="hidden" asp-for="editUserViewModel.Avatar" />
+        @*<input type="hidden" asp-for="editUserViewModel.Password" />*@
+
+        <div class="col-lg-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    اطلاعات کاربر
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>نام کاربری</label>
+                        <label class="text-success">@Model.editUserViewModel.UserName</label>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label>ایمیل</label>
+                        <input type="email" asp-for="editUserViewModel.Email" class="form-control">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>کلمه عبور</label>
+                        <input type="password" asp-for="editUserViewModel.Password" class="form-control">
+                        <p class="help-block">در صورت وارد کردن کلمه عبور ، کلمه عبور کاربر تغییر خواهد کرد</p>
+                    </div>
+
+                    <input type="submit" value="ویرایش اطلاعات" class="btn btn-outline btn-primary btn-sm" />
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    تصویر پروفایل
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="imgAvatar" src="~/AvatorUser/@Model.editUserViewModel.Avatar" class="thumbnail" width="100" />
+                        </div>
+                        <div class="col-md-8 form-group">
+                            <label>انتخاب تصویر</label>
+                            <input type="file" asp-for="editUserViewModel.UserAvatar">
+                        </div>
+
+
+                    </div>
+
+                    <hr />
+                    <div class="form-group">
+                        <label>انتخاب نقش کاربر</label>
+                        @foreach (var item in roles)
+                        {
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="SelectedRoles" value="@item.RoleID" @((Model.editUserViewModel.RoleUser.Any(r => r == item.RoleID) ? "checked" : ""))>@item.RoleTitle
+                                </label>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+
+    <script>
+        function readURL(input) {
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#imgAvatar').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#editUserViewModel_UserAvatar").change(function () {
+            readURL(this);
+        });
+    </script>
+}

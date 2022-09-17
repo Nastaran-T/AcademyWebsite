@@ -1,0 +1,25 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+
+ services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddRazorPages();
+
+
+  app.UseRouting();
+            app.UseStaticFiles();
+            app.UseAuthentication();
+            app.UseAuthorization();
+            app.UseMvc();
+
+
+
+  app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+
+                   name: "Default",
+                   pattern: "{controller=Home}/{action=Index}/{id?}"
+               );
+            });

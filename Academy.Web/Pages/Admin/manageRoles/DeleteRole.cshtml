@@ -1,0 +1,22 @@
+﻿@page "{id}"
+@model Academy.Web.Pages.Admin.manageRoles.DeleteRoleModel
+@{
+    ViewData["Title"] = "حذف نقش ها";
+}
+
+
+<br />
+<div class="container alert alert-danger">
+    <form method="post">
+        <input type="hidden" asp-for="@Model.Role.RoleID" />
+        <input type="hidden" asp-for="@Model.Role.RoleTitle" />
+        <h3>آیا از حذف نقش "@Model.Role.RoleTitle" مطمئن هستید ؟ </h3>
+        <div>
+            <input type="submit" value="بله" class="btn btn-success" />
+            <a asp-page="Index" class="btn btn-danger">خیر</a>
+        </div>
+
+
+    </form>
+
+</div>

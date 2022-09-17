@@ -1,0 +1,9 @@
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\bin\Debug\netcoreapp2.1\Toplearn.DataLayer.deps.json
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\bin\Debug\netcoreapp2.1\Toplearn.DataLayer.dll
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\bin\Debug\netcoreapp2.1\Toplearn.DataLayer.pdb
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.csprojAssemblyReference.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.AssemblyInfoInputs.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.AssemblyInfo.cs
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.csproj.CoreCompileInputs.cache
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.dll
+D:\Project2020\TopLearnWebsite-Core\TopLearnWebsite\Toplearn.DataLayer\obj\Debug\netcoreapp2.1\Toplearn.DataLayer.pdb

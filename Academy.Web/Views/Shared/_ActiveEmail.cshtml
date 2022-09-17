@@ -1,0 +1,13 @@
+﻿@model Academy.DataLayer.Entities.User.User
+@{
+    Layout = null;
+}
+
+<div style="direction:rtl;padding:20px">
+    <h2 style="color:forestgreen">@Model.UserName عزیز!</h2>
+    <p>با تشکر از ثبت نام شما در تاپلرن ، جهت ادامه کار می بایست حساب کاربری خود را فعال کنید</p>
+    <p>
+        <a href="https://localhost:44340/Account/ActiveAccount/@Model.ActiveCode" class="btn-success">فعالسازی حساب کاربری</a>
+    </p>
+</div>
+      

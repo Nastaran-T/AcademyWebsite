@@ -1,0 +1,77 @@
+﻿@page "{id}"
+@model Academy.Web.Pages.Admin.manageCourses.IndexEpisodeModel
+@{    
+    ViewData["Title"] = "قسمت های دوره"; 
+}
+
+<br />
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                لیست قسمت های دوره
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline" role="grid">
+
+                        <div class="col-md-12" style="margin:10px 0px;">
+                            <!--آی دی رو باید به دکمه هم پاس بدم -->
+                            <a asp-page="CreateEpisode" asp-route-id="@ViewData["CourseId"].ToString()" class="btn btn-outline btn-primary">افزودن بخش جدید</a>
+
+                        </div>
+
+                        <!--table-->
+
+                        <table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" aria-describedby="dataTables-example_info">
+                            <thead>
+                                <tr>
+                                    <th>عنوان بخش</th>
+                                    <th>زمان جلسه</th>
+                                    <th>رایگان</th>
+                                    <th>دستورات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.CourseEpisodes)
+                                {
+                                <tr>
+
+                                    <td>
+                                        @item.EpisodeTitle
+                                    </td>
+                                    <td>
+                                        @item.EpisodeTime
+                                    </td>
+                                    <td>
+                                        @if (item.IsFree)
+                                        {
+                                            <span class="text-success">
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-danger">
+                                                <i class="glyphicon glyphicon-remove"></i>
+                                            </span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <a href="/Admin/manageCourses/EditEpisode/@item.EpisodeId" class="btn btn-warning btn-sm">
+                                            ویرایش
+                                        </a>
+
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
